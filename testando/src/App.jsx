@@ -71,7 +71,7 @@ function App() {
   // Ajusta o volume quando o vídeo for carregado
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.volume = 0.2;
+      videoRef.current.volume = 0.0;
     }
   }, [currentSong]); // roda toda vez que a música mudar
 
