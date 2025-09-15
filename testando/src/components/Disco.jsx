@@ -1,4 +1,4 @@
-import classes from "./Disco.css";
+import "./Disco.css";
 
 const Disco = ({ songs, onSelectSong }) => {
   return (
