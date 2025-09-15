@@ -1,0 +1,73 @@
+.main {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #b73845;
+}
+
+.video-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -5;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  z-index: -5;
+  transition: 500ms ease;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.principal h1 {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -30px;
+}
+
+.links img {
+  margin: 0px 5px 0px 5px;
+}
+
+.overlay-black {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1111112f; /* preto leve na frente do vídeo */
+  z-index: 999;
+}
+
+.overlay-black p {
+  margin: -10px 0px 10px 0px;
+  text-align: center;
+}
+
+.mute-btn {
+  cursor: pointer;
+}
